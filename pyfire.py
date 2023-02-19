@@ -13,10 +13,6 @@ s.listen(5)
 print(f"[*] Listening as {SERVER_HOST}:{SERVER_PORT}")
 
 def listen_for_client(cs):
-    """
-    This function keep listening for a message from `cs` socket
-    Whenever a message is received, broadcast it to all other connected clients
-    """
     while True:
         try:
             msg = cs.recv(1024).decode()
