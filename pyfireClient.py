@@ -3,8 +3,11 @@ import random
 from threading import Thread
 from datetime import datetime
 from colorama import Fore, init, Back
+import pyfiglet
 
 init()
+
+print(pyfiglet.figlet_format('PyFire Client'))
 
 colors = [Fore.BLUE, Fore.CYAN, Fore.GREEN, Fore.LIGHTBLACK_EX, 
     Fore.LIGHTBLUE_EX, Fore.LIGHTCYAN_EX, Fore.LIGHTGREEN_EX, 
