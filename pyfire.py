@@ -1,5 +1,8 @@
 import socket
 from threading import Thread
+import pyfiglet
+
+print(pyfiglet.figlet_format('PyFire Server'))
 
 SERVER_HOST = "0.0.0.0"
 SERVER_PORT = 5002
